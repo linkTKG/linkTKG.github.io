@@ -21,4 +21,979 @@
         
         </section>
         <img src="windows10.jpg" width="300" height="300">
-        <h1>windows10.jpg</h1>        
+        <h1>windows10.jpg</h1>     
+        
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1977741-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1977741-1');
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4575936807909242"
+     crossorigin="anonymous"></script>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="高橋永治">
+
+<meta name="keywords" content="audio,HTML5,タグ,要素">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5/埋め込み/audio要素 プラグインを使わずに音声を再生する - TAG index">
+<meta property="og:site_name" content="TAG index">
+<meta property="og:image" content="https://www.tagindex.com/image/ogp/html5.png">
+<meta property="og:url" content="https://www.tagindex.com/html5/embed/audio.html">
+
+<link rel="canonical" href="https://www.tagindex.com/html5/embed/audio.html">
+
+<link rel="stylesheet" href="../../include/css/common.css">
+<link rel="stylesheet" href="../../include/css/usage.css">
+<link rel="stylesheet" href="../../include/css/explain.css">
+
+<script src="../../include/js/jquery.js"></script>
+<script src="../../include/js/common.js"></script>
+<script src="../../include/js/ad.js"></script>
+
+<title>HTML5/埋め込み/audio要素 プラグインを使わずに音声を再生する - TAG index</title>
+
+</head>
+<body>
+
+
+<!-- Header -->
+<header id="header">
+
+<div class="limit">
+
+<div class="plate">
+
+<div class="logo">
+<a href="https://www.tagindex.com/">
+<img src="https://www.tagindex.com/image/design/title.gif" alt="TAG index" width="208" height="33">
+</a>
+</div>
+
+<div id="sbtn">
+<img src="https://www.tagindex.com/image/design/search1.png" alt="検索" width="27" height="26">
+</div>
+
+<div id="sbox" class="search">
+<script async src="https://cse.google.com/cse.js?cx=partner-pub-4575936807909242:8lcrsa5kagl"></script>
+<div class="gcse-searchbox-only"></div>
+</div>
+
+<div class="info">
+<p>HTML&amp;CSS Web制作リファレンス</p>
+</div>
+
+</div>
+
+</div><!-- /limit -->
+
+<nav id="menu" class="menu">
+
+<div class="toggle">
+<div id="toggle" class="close">MENU</div>
+</div>
+
+<div class="limit html5">
+
+<ul id="gnav" class="multi">
+<li><a href="https://www.tagindex.com/index.html" class="home">HOME</a></li>
+<li><a href="https://www.tagindex.com/html5/index.html" class="html5">HTML5</a></li>
+<li><a href="https://www.tagindex.com/html_tag/index.html" class="html">HTMLタグ</a></li>
+<li><a href="https://www.tagindex.com/stylesheet/index.html" class="css">CSS</a></li>
+<li><a href="https://www.tagindex.com/color/index.html" class="color">カラーチャート</a></li>
+<li><a href="https://www.tagindex.com/tool/index.html" class="tool">Web便利ツール</a></li>
+<li><a href="https://www.tagindex.com/javascript/index.html" class="jscript">JavaScript</a></li>
+</ul>
+
+</div><!-- /limit -->
+
+</nav>
+
+<nav class="path">
+
+<div class="limit">
+
+<ol>
+<li><a href="../../index.html">HOME</a></li>
+<li><a href="../index.html">HTML5</a></li>
+<li><a href="index.html">埋め込み</a></li>
+<li>プラグインを使わずに音声を再生する</li>
+</ol>
+
+</div><!-- /limit -->
+
+</nav>
+
+<div class="title">
+
+<div class="limit">
+
+<h1>プラグインを使わずに音声を再生する</h1>
+
+</div><!-- /limit -->
+
+</div>
+
+</header>
+<!-- /Header -->
+
+
+<!-- AdsTop -->
+<aside id="ads_top">
+
+<div class="limit">
+
+<!-- 一般ページ 上部 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4575936807909242"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle ads_page_top"
+     style="display:block"
+     data-ad-client="ca-pub-4575936807909242"
+     data-ad-slot="5408025357"
+     data-ad-format="horizontal"
+     data-full-width-responsive="false"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+</aside>
+<!-- /AdsTop -->
+
+
+<!-- Body -->
+<div id="body">
+
+<div class="limit multi">
+
+
+<!-- Main -->
+<div id="main"><main>
+
+
+<!-- Article -->
+<article id="content">
+
+
+<!-- Article Header -->
+<header class="articleHeader">
+<h2>
+
+&lt;audio&gt;&lt;/audio&gt;
+
+</h2>
+</header>
+<!-- /Article Header -->
+
+
+<!-- Element Data -->
+<section class="data">
+
+<table border="1">
+<tr class="browser">
+<th scope="row" title="ブラウザの対応状況">ブラウザ</th>
+<td>
+<ul>
+<li><img src="../../image/marks/ie.gif" alt="IE" width="32" height="13" title="Internet Explorer"></li>
+<li><img src="../../image/marks/cr.gif" alt="Cr" width="32" height="13" title="Chrome"></li>
+<li><img src="../../image/marks/sf.gif" alt="Sf" width="32" height="13" title="Safari"></li>
+<li><img src="../../image/marks/fx.gif" alt="Fx" width="32" height="13" title="Firefox"></li>
+<li><img src="../../image/marks/o.gif" alt="O" width="32" height="13" title="Opera"></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="row" title="この要素が属するカテゴリー">分類</th>
+<td>
+<a href="../basic/flow.html">フロー・コンテンツ</a> / <a href="../basic/phrasing.html">フレージング・コンテンツ</a> / <a href="../basic/embedded.html">エンベッディッド・コンテンツ</a> / <a href="../basic/interactive.html">インタラクティブ・コンテンツ</a>（controls属性がある場合） / <a href="../basic/palpable.html">パルパブル・コンテンツ</a>（controls属性がある場合）
+</td>
+</tr>
+<tr>
+<th scope="row" title="この要素を利用できる場所">利用場所</th>
+<td>
+<a href="../basic/embedded.html">エンベッディッド・コンテンツ</a>が置ける場所
+</td>
+</tr>
+<tr>
+<th scope="row" title="この要素に含められる内容">内容</th>
+<td>
+src属性がある場合：0個以上の<a href="track.html">track要素</a>、その後に<a href="../basic/transparent.html">トランスペアレント</a>（親要素の<a href="../basic/contentmodel.html">コンテンツモデル</a>を継承） / src属性がない場合：0個以上の<a href="source.html">source要素</a>、その後に0個以上の<a href="track.html">track要素</a>、その後に<a href="../basic/transparent.html">トランスペアレント</a> <span class="proviso">ただし、どちらの場合も<a href="video.html">video要素</a>とaudio要素は含められない</span>
+</td>
+</tr>
+</table>
+
+</section>
+<!-- /Element Data -->
+
+
+<!-- Section -->
+<section class="description">
+
+<!-- 概要 -->
+
+<p><dfn>audio要素</dfn>は、音声を文書内に埋め込みます。この要素に対応しているブラウザでは、プラグインを使わずに音声を再生することができます。</p>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Section -->
+<section class="code">
+
+<!-- コード -->
+
+<pre class="preBreak">
+<code>
+<mark>&lt;audio <span class="soAttr">src="<span class="soValue">example.mp3</span>" autoplay loop</span>&gt;&lt;/audio&gt;</mark>
+
+<mark>&lt;audio <span class="soAttr">preload="<span class="soValue">metadata</span>" controls</span>&gt;</mark>
+&lt;source src="example.mp3" type="audio/mp3"&gt;
+&lt;source src="example.m4a" type="audio/aac"&gt;
+&lt;source src="example.ogg" type="audio/ogg"&gt;
+<mark>&lt;/audio&gt;</mark>
+</code>
+</pre>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Section -->
+<section class="description attribute">
+
+<!-- 属性 -->
+
+<div class="over">
+<table border="1">
+
+<colgroup>
+<col class="groupAttribute">
+<col class="groupDescription">
+</colgroup>
+
+<colgroup>
+<col class="groupValue">
+<col class="groupDescription">
+</colgroup>
+
+<thead>
+<tr>
+<th colspan="2" scope="colgroup">属性</th>
+<th colspan="2" scope="colgroup">値</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th colspan="4" scope="rowgroup">任意属性</th>
+</tr>
+<tr>
+<td><code class="soAttr">src=""</code></td>
+<td>音声の指定</td>
+<td>URL</td>
+<td>埋め込む音声のURL</td>
+</tr>
+<tr>
+<td rowspan="3"><code class="soAttr">preload=""</code></td>
+<td rowspan="3">先読みの目安</td>
+<td><code class="soValue">none</code></td>
+<td>先読みを必要としない</td>
+</tr>
+<tr>
+<td><code class="soValue">metadata</code></td>
+<td>メタデータだけは先読みしてほしい</td>
+</tr>
+<tr>
+<td><code class="soValue">auto</code></td>
+<td>音声全体を先読みしてほしい</td>
+</tr>
+<tr>
+<td><code class="soAttr">mediagroup=""</code></td>
+<td>グループ名（HTML 5.1では<strong>廃止</strong>）</td>
+<td>文字列</td>
+<td>属するグループの名前</td>
+</tr>
+<tr>
+<td><code class="soAttr">autoplay</code></td>
+<td>自動再生を行う</td>
+<td>（<code class="soValue">autoplay</code>）</td>
+<td>値は省略可能</td>
+</tr>
+<tr>
+<td><code class="soAttr">loop</code></td>
+<td>ループ再生を行う</td>
+<td>（<code class="soValue">loop</code>）</td>
+<td>値は省略可能</td>
+</tr>
+<tr>
+<td><code class="soAttr">muted</code></td>
+<td>音声を出さない</td>
+<td>（<code class="soValue">muted</code>）</td>
+<td>値は省略可能</td>
+</tr>
+<tr>
+<td><code class="soAttr">controls</code></td>
+<td>コントローラを表示する</td>
+<td>（<code class="soValue">controls</code>）</td>
+<td>値は省略可能</td>
+</tr>
+<tr>
+<td rowspan="2"><code class="soAttr">crossorigin=""</code></td>
+<td rowspan="2">別ドメインにあるリソースの扱い方法</td>
+<td><code class="soValue">anonymous</code></td>
+<td>認証を利用しない</td>
+</tr>
+<tr>
+<td><code class="soValue">use-credentials</code></td>
+<td>認証を利用する</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+
+<ul class="note">
+<li><b class="keyword">autoplay属性</b>の指定は、<b class="keyword">preload属性</b>の指定よりも優先されます。</li>
+<li><b class="keyword">crossorigin属性</b>は、CORS (Cross-Origin Resource Sharing)の仕組みを利用して、別ドメインのリソースにアクセスする際の扱いを指定するもの、だそうです。値が省略された場合のデフォルト値は <code class="soValue">anonymous</code>、属性そのものが省略された場合はCORSを利用せずにアクセスします。（<span class="unidentified">詳細未確認</span>）</li>
+</ul>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Section -->
+<section class="description">
+
+<!-- 参考 -->
+
+<h3>音声ファイルの指定方法</h3>
+
+<p>音声ファイルは、audio要素の<b class="keyword">src属性</b>で指定することができます。</p>
+
+<pre class="preBreak">
+<code><mark>&lt;audio <span class="soAttr">src="<span class="soValue">example.mp3</span>"</span>&gt;&lt;/audio&gt;</mark></code>
+</pre>
+
+<p>複数の再生候補（形式の異なる音声データ）を用意する場合は、audio要素内に<a href="source.html">source要素</a>を配置して、その<b class="keyword">src属性</b>で音声ファイルを指定します。</p>
+
+<pre class="preBreak">
+<code><span>&lt;audio&gt;</span>
+
+<mark>&lt;source <span class="soAttr">src="<span class="soValue">example.mp3</span>"</span>&gt;
+&lt;source <span class="soAttr">src="<span class="soValue">example.m4a</span>"</span>&gt;
+&lt;source <span class="soAttr">src="<span class="soValue">example.ogg</span>"</span>&gt;</mark>
+
+<span>&lt;/audio&gt;</span></code>
+</pre>
+
+<p>上記の例では、3タイプの音声ファイルを指定しています（内容は全て同じ）。このように指定しておくことで、ブラウザ側が対応している形式（ファイル）で再生されるようになります。例えば、<i class="voice">MP3形式</i>に対応しているブラウザであれば、<q><code class="soValue">example.mp3</code></q>が再生されることになります。</p>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Section -->
+<section class="description">
+
+<!-- 参考 -->
+
+<h3>音声の形式について</h3>
+
+<p>ブラウザの種類により、再生できる音声形式が異なります。</p>
+
+<div class="over">
+<table border="1">
+
+<thead>
+<tr>
+<th scope="col">形式</th>
+<th scope="col">対応ブラウザ</th>
+<th scope="col">MIMEタイプ</th>
+<th scope="col">拡張子</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>MP3</td>
+<td>IE、Chrome、Safari、Firefox</td>
+<td><code>audio/mp3</code></td>
+<td>.mp3</td>
+</tr>
+<tr>
+<td>AAC</td>
+<td>IE、Chrome、Safari、Firefox</td>
+<td><code>audio/aac</code></td>
+<td>.m4a</td>
+</tr>
+<tr>
+<td>Ogg</td>
+<td>Chrome、Firefox、Opera</td>
+<td><code>audio/ogg</code></td>
+<td>.ogg</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+
+<ul class="note">
+<li>ブラウザのバージョンにより、対応状況は異なる場合があります。</li>
+<li>上記の表は、音声形式に詳しくない人間（私）が書いています。内容については参考程度に留めておいてください。</li>
+</ul>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Section -->
+<section class="description">
+
+<!-- 参考 -->
+
+<h3>代替コンテンツについて</h3>
+
+<p>audio要素の内容には、この要素に対応していないブラウザ向けの代替コンテンツを配置できます。</p>
+
+<p>次の例では、audio要素に対応していない場合は<a href="object.html">object要素</a>を、それも対応していない場合はリンクが表示されるように指定しています。（代替コンテンツはsource要素よりも後に配置します）</p>
+
+<pre class="preBreak">
+<code><span>&lt;audio&gt;</span>
+
+&lt;source src="example.mp3"&gt;
+&lt;source src="example.m4a"&gt;
+&lt;source src="example.ogg"&gt;
+
+<mark><span class="soOther">&lt;object data="example.mp3"&gt;
+&lt;param name="src" value="example.mp3"&gt;
+&lt;param name="autostart" value="false"&gt;
+&lt;a href="example.mp3"&gt;音声を聴く&lt;/a&gt;
+&lt;/object&gt;</span></mark>
+
+<span>&lt;/audio&gt;</span></code>
+</pre>
+
+<ul class="note">
+<li>audio要素は、親要素の<a href="../basic/contentmodel.html">コンテンツ・モデル</a>を継承します（<a href="../basic/transparent.html">トランスペアレント</a>）。そのため、親要素の種類によっては、代替コンテンツとして配置できない要素もあるので注意が必要です。</li>
+</ul>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Section -->
+<section class="description">
+
+<!-- 参考 -->
+
+<h3>preload属性について</h3>
+
+<p><dfn>preload属性</dfn>は、先読みに関する情報をブラウザ側に伝えます。指定できる値は次の3つです。（ただし、必ずしも指定した通りの挙動になるとは限らないようです）</p>
+
+<dl>
+<dt><code class="soValue">none</code></dt>
+<dd>先読みを必要としていない（この音声は再生されるかどうか分からない、できるだけトラフィックを抑えたい）</dd>
+<dt><code class="soValue">metadata</code></dt>
+<dd>音声のメタデータ（再生時間などの情報）だけは先読みしてほしい</dd>
+<dt><code class="soValue">auto</code></dt>
+<dd>トラフィックは気にしないから音声全体を先読みしてほしい</dd>
+</dl>
+
+<pre class="preBreak">
+<code><span>&lt;audio <span class="soAttr">src="<span class="soValue">example.mp3</span>"</span> <mark class="soAttr">preload="<span class="soValue">auto</span>"</mark>&gt;&lt;/audio&gt;</span></code>
+</pre>
+
+<ul class="note">
+<li>preload属性に空文字（<code class="soAttr">preload=""</code>）を指定した場合は、<code class="soValue">auto</code> を指定した時と同じ扱いになります。</li>
+<li>この属性自体が指定されなかった場合は、先読みの挙動はブラウザ側に任されることになります。</li>
+</ul>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Section -->
+<section class="description">
+
+<!-- 参考 -->
+
+<h3>mediagroup属性について</h3>
+
+<ul class="note">
+<li>この属性は、HTML 5.1では<strong>廃止</strong>されました。</li>
+</ul>
+
+<p><dfn>mediagroup属性</dfn>は、その音声が属している<i class="voice">メディアグループ</i>の名前を指定します。複数のメディア要素（<a href="video.html">video要素</a>とaudio要素）に同じ名前を付けることにより、それらを1つのグループとして連携させることが可能になるようです。（<span class="unidentified">詳細未確認</span>）</p>
+
+<p>次の例では、<q><code class="soValue">music</code></q>というグループ名を指定しています。</p>
+
+<pre class="preBreak">
+<code><span>&lt;audio <span class="soAttr">src="<span class="soValue">example.mp3</span>"</span> <mark class="soAttr">mediagroup="<span class="soValue">music</span>"</mark>&gt;&lt;/audio&gt;</span></code>
+</pre>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Section -->
+<section class="description">
+
+<!-- 参考 -->
+
+<h3>autoplay属性について</h3>
+
+<p><dfn>autoplay属性</dfn>は、音声の自動再生を指定します。この属性を指定すると、ページを読み込んだ時点で自動的に再生されるようになります。</p>
+
+<pre class="preBreak">
+<code><span>&lt;audio <span class="soAttr">src="<span class="soValue">example.mp3</span>"</span> <mark class="soAttr">autoplay</mark>&gt;&lt;/audio&gt;</span></code>
+</pre>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Section -->
+<section class="description">
+
+<!-- 参考 -->
+
+<h3>loop属性について</h3>
+
+<p><dfn>loop属性</dfn>は、音声のループ再生を指定します。この属性を指定すると、その音声が繰り返し再生されるようになります。</p>
+
+<pre class="preBreak">
+<code><span>&lt;audio <span class="soAttr">src="<span class="soValue">example.mp3</span>"</span> <mark class="soAttr">loop</mark>&gt;&lt;/audio&gt;</span></code>
+</pre>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Section -->
+<section class="description">
+
+<!-- 参考 -->
+
+<h3>muted属性について</h3>
+
+<p><dfn>muted属性</dfn>は、音声を出さずに再生することを指定します。</p>
+
+<pre class="preBreak">
+<code><span>&lt;audio <span class="soAttr">src="<span class="soValue">example.mp3</span>"</span> <mark class="soAttr">muted</mark>&gt;&lt;/audio&gt;</span></code>
+</pre>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Section -->
+<section class="description">
+
+<!-- 参考 -->
+
+<h3>controls属性について</h3>
+
+<p><dfn>controls属性</dfn>は、音声のコントローラ（再生、停止、ボリューム、等）の表示を指定します。</p>
+
+<pre class="preBreak">
+<code><span>&lt;audio <span class="soAttr">src="<span class="soValue">example.mp3</span>"</span> <mark class="soAttr">controls</mark>&gt;&lt;/audio&gt;</span></code>
+</pre>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Section -->
+<section class="description">
+
+<!-- 変更点 -->
+
+<div class="changed">
+
+<dl>
+<dt>HTML 5.1における変更点</dt>
+<dd>
+
+<ul>
+<li>mediagroup属性が廃止されました。</li>
+</ul>
+
+</dd>
+</dl>
+
+</div>
+
+</section>
+<!-- /Section -->
+
+
+<!-- Example -->
+<section class="example">
+
+<h3>使用例</h3>
+
+<!-- Example Inner -->
+<div class="exampleInner">
+
+
+<figure class="single">
+
+<pre class="code preBreak">
+<code>
+<mark>&lt;audio <span class="soAttr">preload="<span class="soValue">metadata</span>" controls</span>&gt;</mark>
+
+&lt;source src="example.mp3" type="audio/mp3"&gt;
+&lt;source src="example.m4a" type="audio/aac"&gt;
+&lt;source src="example.ogg" type="audio/ogg"&gt;
+
+<span class="soOther">&lt;p&gt;音声を再生することができませんでした。&lt;/p&gt;</span>
+
+<mark>&lt;/audio&gt;</mark>
+</code>
+</pre>
+
+</figure>
+
+
+</div>
+<!-- /Example Inner -->
+
+</section>
+<!-- /Example -->
+
+
+<!-- Af -->
+<aside class="afBottom">
+
+<ul>
+<li><span>PR</span> <a href="https://px.a8.net/svt/ejp?a8mat=3HKSPY+GO5PU+50+5SI01U" rel="nofollow">国内最速・高安定の高性能レンタルサーバー【ConoHa WING】</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3HKSPY+GO5PU+50+5SI01U" alt=""></li>
+<li><span>PR</span> <a href="https://px.a8.net/svt/ejp?a8mat=3HKUAQ+DN6MUQ+47L8+614CY" rel="nofollow">フリーランスの請求書を即日払い【FREENANCE】</a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3HKUAQ+DN6MUQ+47L8+614CY" alt=""></li>
+<li><span>PR</span> <a href="https://px.a8.net/svt/ejp?a8mat=3HKSPY+3FU6LU+2OTA+HXKQQ" rel="nofollow">年収UP率93.8% / 平均年収UP額126万円のエンジニア転職サイト【転職ドラフト】</a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=3HKSPY+3FU6LU+2OTA+HXKQQ" alt=""></li>
+</ul>
+
+</aside>
+<!-- /Af -->
+
+
+<!-- AdsBottom -->
+<aside class="ads_main_btm">
+
+<div class="ads">
+
+<!-- 一般ページ 下部 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4575936807909242"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle ads_main_btm"
+     style="display:block"
+     data-ad-client="ca-pub-4575936807909242"
+     data-ad-slot="2454558953"
+     data-ad-format="auto"
+     data-full-width-responsive="false"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+</aside>
+<!-- /AdsBottom -->
+
+
+<!-- Article Footer -->
+<footer class="relatedLink">
+
+<nav class="backLink">
+<a href="index.html">埋め込み</a>
+</nav>
+
+<dl>
+<dt>関連ページ</dt>
+<dd>
+
+<ul>
+<li><a href="video.html">HTML5リファレンス - プラグインを使わずに動画を再生する</a></li>
+<li><a href="source.html">HTML5リファレンス - メディアリソースの候補を指定する</a></li>
+<li><a href="track.html">HTML5リファレンス - 動画・音声と同期するテキストトラック</a></li>
+<li><a href="embed.html">HTML5リファレンス - プラグインデータを埋め込む</a></li>
+<li><a href="object.html">HTML5リファレンス - 外部リソースを埋め込む</a></li>
+</ul>
+
+</dd>
+</dl>
+
+</footer>
+<!-- /Article Footer -->
+
+
+</article>
+<!-- /Article -->
+
+
+</main></div>
+<!-- /Main -->
+
+
+<!-- Navi -->
+<div id="navi">
+
+
+<!-- AdsNavi -->
+<aside class="ads_nav_top">
+
+<!-- 一般ページ ナビ -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4575936807909242"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle page_navi_top"
+     style="display:block"
+     data-ad-client="ca-pub-4575936807909242"
+     data-ad-slot="3931292158"
+     data-ad-format="rectangle"
+     data-full-width-responsive="false"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</aside>
+<!-- /AdsNavi -->
+
+
+<!-- Nav PR -->
+<aside class="pr">
+<a href="https://www.urlinput.com/jpn/" rel="sponsored">ご案内：URL入力に特化したスマートフォン向け入力支援ツールを公開中</a>
+</aside>
+<!-- /Nav PR -->
+
+
+<!-- Category -->
+<section id="category">
+
+<h2>カテゴリー</h2>
+
+<nav class="menu">
+
+<ul>
+<li><a href="../index.html">HTML5</a></li>
+</ul>
+
+<ul>
+<li><a href="../page/index.html">ページ全般</a></li>
+<li><a href="../section/index.html">セクション</a></li>
+<li><a href="../group/index.html">グループ化</a></li>
+<li><a href="../text/index.html">テキスト</a></li>
+<li><a href="../embed/index.html" class="active">埋め込み</a></li>
+<li><a href="../table/index.html">テーブル</a></li>
+<li><a href="../form/index.html">フォーム</a></li>
+<li><a href="../action/index.html">アクション</a></li>
+<li><a href="../attribute/index.html">グローバル属性</a></li>
+</ul>
+
+<ul>
+<li><a href="../elements/index.html">要素一覧</a> ［<a href="../elements/abc.html">ABC</a>］</li>
+</ul>
+
+<ul>
+<li><a href="../basic/index.html">HTML5の基本</a></li>
+</ul>
+
+</nav>
+
+<aside class="af">
+
+<p><a href="https://px.a8.net/svt/ejp?a8mat=3HKUAR+29KENM+UBO+U1J6P" rel="nofollow">
+<img border="0" width="234" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=210924387137&wid=001&eno=01&mid=s00000003930005046000&mc=1"></a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3HKUAR+29KENM+UBO+U1J6P" alt=""></p>
+
+<p>PR: <a href="https://px.a8.net/svt/ejp?a8mat=3HKUAR+29KENM+UBO+TUVZM" rel="nofollow">IT業界の転職ならマイナビ IT AGENT＜ご登録無料＞</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3HKUAR+29KENM+UBO+TUVZM" alt=""></p>
+
+</aside>
+
+</section>
+<!-- /Category -->
+
+
+<!-- AdsRelated -->
+<aside id="ads" class="ads_nav_btm">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4575936807909242"
+     crossorigin="anonymous"></script>
+<!-- ページ ナビ2 -->
+<ins class="adsbygoogle page_navi_btm"
+     style="display:block"
+     data-ad-client="ca-pub-4575936807909242"
+     data-ad-slot="5711316953"
+     data-ad-format="vertical"
+     data-full-width-responsive="false"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</aside>
+<!-- /AdsRelated -->
+
+
+</div>
+<!-- /Navi -->
+
+
+</div><!-- /limit -->
+
+</div>
+<!-- /Body -->
+
+
+<!-- Post -->
+<aside id="post">
+
+<div class="limit">
+
+<div class="plate">
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4575936807909242"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-matched-content-ui-type="image_card_sidebyside,image_card_stacked"
+     data-matched-content-rows-num="5,1"
+     data-matched-content-columns-num="1,5"
+     data-ad-client="ca-pub-4575936807909242"
+     data-ad-slot="3218764864"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</div>
+
+<p class="af">TAG indexは<a href="https://px.a8.net/svt/ejp?a8mat=3HKSPX+GHL6WI+1JUK+5ZU2A" rel="nofollow">コアサーバー</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3HKSPX+GHL6WI+1JUK+5ZU2A" alt="">を利用しています（コストパフォーマンスはかなり良いです）</p>
+
+</div><!-- /limit -->
+
+</aside>
+<!-- /Post -->
+
+
+<!-- Footer -->
+<footer id="footer">
+
+<div class="limit">
+
+<div class="plate multi">
+
+<div class="fnav">
+
+<nav class="multi">
+
+<ul class="pc">
+<li><a href="https://www.tagindex.com/">HOME</a></li>
+<li><a href="https://www.tagindex.com/html5/">HTML5</a></li>
+<li><a href="https://www.tagindex.com/html_tag/">HTMLタグ</a></li>
+<li><a href="https://www.tagindex.com/stylesheet/">CSS</a></li>
+<li><a href="https://www.tagindex.com/color/">カラーチャート</a></li>
+<li><a href="https://www.tagindex.com/tool/">Web便利ツール</a></li>
+<li><a href="https://www.tagindex.com/javascript/">JavaScript</a></li>
+</ul>
+
+<ul class="pc">
+<li><a href="https://www.tagindex.com/news/">お知らせ</a></li>
+<li><a href="https://www.tagindex.com/info/about/">TAG indexについて</a></li>
+<li><a href="https://www.tagindex.com/info/note/">ご利用について</a></li>
+<li><a href="https://www.tagindex.com/info/ad/">広告掲載について</a></li>
+<li><a href="https://www.tagindex.com/form/contact/">お問い合わせ</a></li>
+</ul>
+
+<div class="sp">
+<a href="https://www.tagindex.com/">HOME</a>
+</div>
+
+<ul class="sp multi">
+<li><a href="https://www.tagindex.com/news/">お知らせ</a></li>
+<li><a href="https://www.tagindex.com/info/about/">TAG indexについて</a></li>
+<li><a href="https://www.tagindex.com/info/note/">ご利用について</a></li>
+<li><a href="https://www.tagindex.com/info/ad/">広告掲載について</a></li>
+<li><a href="https://www.tagindex.com/form/contact/">お問い合わせ</a></li>
+<li><a href="https://www.tagindex.com/cgi-lib/feedback/form.cgi">フィードバック送信</a></li>
+<li><a href="https://www.tagindex.com/info/privacy/">個人情報保護方針</a></li>
+<li><a href="https://www.tagindex.com/sitemap/">サイトマップ</a></li>
+<li><a href="https://twitter.com/aegtaka" rel="nofollow">Twitter</a></li>
+<li><a href="https://www.facebook.com/tagindex/" rel="nofollow">Facebookページ</a></li>
+</ul>
+
+</nav>
+
+</div>
+
+<div class="site">
+
+<dl>
+<dt><a href="https://www.tagindex.com/"><img src="https://www.tagindex.com/image/design/foot_logo.gif" alt="TAG index" width="178" height="28"></a></dt>
+<dd>
+<p>ホームページ制作を支援する タグインデックス</p>
+<p>https://www.tagindex.com/</p>
+</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div class="author">
+
+<dl>
+<dt>著者・運営者：高橋永治（たかはし えいじ）</dt>
+<dd>1996年からWeb制作を開始。その後、異業種からWeb業界に職を変え、各種企業のWebサイト立ち上げに携わる。現在は自前サイトの企画・運営を中心に活動し、時々企業のWebに関わっている。SNSはすぐに飽きてしまって続かないが、たまにやる気が出てコメントを連投することもある。</dd>
+</dl>
+
+</div>
+
+</div><!-- /limit -->
+
+<div class="bottom">
+
+<div class="limit">
+
+<div class="multi">
+
+<ul>
+<li><a href="https://www.tagindex.com/info/privacy/">個人情報保護方針</a></li>
+<li><a href="https://www.tagindex.com/sitemap/">サイトマップ</a></li>
+<li><a href="https://www.tagindex.com/cgi-lib/feedback/form.cgi">フィードバック送信</a></li>
+<li><a href="https://twitter.com/aegtaka" rel="nofollow">Twitter</a></li>
+<li><a href="https://www.facebook.com/tagindex/" rel="nofollow">Facebookページ</a></li>
+</ul>
+
+<div class="copy">
+<small>Copyright &copy; TAG index. All Rights Reserved.</small>
+</div>
+
+</div>
+
+</div><!-- /limit -->
+
+</div>
+
+
+<div id="backtop"><a href="#header"><img src="https://www.tagindex.com/image/design/up_wt.gif" alt="↑ページトップ" width="20" height="14"></a></div>
+
+</footer>
+<!-- /Footer -->
+
+
+</body>
+</html>
+   
